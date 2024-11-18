@@ -2,6 +2,7 @@
 
 **Javascript Telex APM** is a lightweight JavaScript package designed to capture and report runtime errors in your web applications. This package simplifies error monitoring by collecting error details and sending them to your specified endpoint or logging them locally for debugging purposes.
 
+
 ## Features
 
 - Capture JavaScript Errors: Automatically listen for global errors and unhandled promise rejections.
@@ -9,9 +10,11 @@
 - Contextual Information: Collect error stack traces, browser details, and timestamps.
 - Lightweight: Minimal impact on performance.
 
+
 ## Requirements
 
 - Node.js and npm/yarn:
+
 
 ## Installation
 
@@ -27,11 +30,12 @@ npm install telex-js-apm
 yarn add telex-js-apm
 ```
 
-- Intall via importing jsdelivr CDN.
+- Install via importing jsdelivr CDN.
 
 ```bash
 <script src="https://cdn.jsdelivr.net/npm/telex-js-apm@1.0.4/src/error-monitor.js"></script>
 ```
+
 
 ## Usage
 
@@ -43,6 +47,7 @@ new ErrorMonitor({
     app_name: 'your_appname',
 });
 ```
+
 
 ## Reporting Endpoint
 
@@ -56,6 +61,7 @@ new ErrorMonitor({
   "status": "error",
 }
 ```
+
 
 ## Deployment
 
@@ -87,17 +93,21 @@ npm run build
 
 Visit [here](https://www.jsdelivr.com/package/npm/telex-js-apm)
 
+
 ## Contributing
 
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
 
 ## Issues
 
 If you encounter any issues, please feel free to [open an issue](https://github.com/muh-jamiu/telex-js-apm/issues) on GitHub.
 
+
 ## License
 
 This package is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 
 ## Contact
 
