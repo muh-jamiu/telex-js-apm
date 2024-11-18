@@ -1,0 +1,19 @@
+{
+  "name": "telex-js-apm",
+  "version": "1.0.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx mkdirp dist && npx ncp src/error-monitor.js dist/error-monitor.js && npx terser src/error-monitor.js -o dist/error-monitor.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "terser": "^5.36.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}

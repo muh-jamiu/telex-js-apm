@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Monitor Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../dist/error-monitor.min.js"></script>
+</head>
+<body>
+    <h1>Error Monitor Example</h1>
+    <script>
+        const monitor = new ErrorMonitor({
+           api_url: "",
+            app_name: 'Jamiu',
+        });
+
+        console.log(monitor)
+
+        
+        console.log("This is a working script!");
+        setTimeout(() => {
+            throw new Error("Testing JavaScript Error");
+        }, 1000);
+    </script>
+</body>
+</html>
