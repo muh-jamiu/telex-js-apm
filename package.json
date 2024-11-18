@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx mkdirp dist && npx ncp src/error-monitor.js dist/error-monitor.js && npx terser src/error-monitor.js -o dist/error-monitor.min.js"
+    "build": "node init && npx mkdirp dist && npx ncp src/error-monitor.js dist/error-monitor.js && npx terser src/error-monitor.js -o dist/error-monitor.min.js"
   },
   "keywords": [],
   "author": "",
